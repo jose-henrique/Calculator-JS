@@ -1,0 +1,115 @@
+:root{
+    --background: #303030;
+    --button: #424242;
+    --screen: rgba(255, 255, 255, 0.16);
+    --buton-border: rgba(255, 255, 255, 0.12);
+    --special-button: #388e3c;
+}
+
+h1{
+    color: #fff;
+    font-size: 62px;
+    padding: 0;
+    margin: 17px;
+}
+
+h2{
+    color: #fff;
+}
+
+body{
+    background: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-calculator{
+    background: var(--background);
+    width: 400px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    border: var(--buton-border) 1px solid
+}
+
+.body-calculator .screen-block{
+    width: 100%;
+    height: 500px;
+    background: var(--screen);
+}
+.body-calculator .buttons-block .important-charters{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.body-calculator .buttons-block .numbers-block{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+.body-calculator .buttons-block .important-charters  .numbers-block button{
+    background: var(--button);
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--buton-border);
+    transition: 0.5s;
+}
+
+.body-calculator .buttons-block .important-charters  .numbers-block .zero{
+    position: absolute;
+    width: 300px;
+    margin-top: 300px;
+}
+
+.body-calculator .buttons-block .important-charters  .numbers-block button:hover{
+    background: rgba(255, 255, 255, 0.16);
+}
+
+.body-calculator .buttons-block .important-charters .operators-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-calculator .buttons-block .important-charters .operators-block button{
+    background: var(--special-button);
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--buton-border);
+    transition: 0.5s;
+}
+
+.body-calculator .buttons-block .important-charters .operators-block button:hover{
+    background: #4caf50;
+}
+
+.body-calculator .buttons-block .equal-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-calculator .buttons-block .equal-button button{
+    background: var(--special-button);
+    width: 300px;
+    height: 100%;
+    border: 1px solid var(--buton-border);
+}
+
+.body-calculator .buttons-block .equal-button button:hover{
+    background: #4caf50;
+}
+
+.body-calculator .buttons-block .equal-button .clean-button{
+    width: 100px;
+    height: 60px;
+}

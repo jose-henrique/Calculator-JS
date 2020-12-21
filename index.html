@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="calculadora.png" />
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="body-calculator">
+        <div class="screen-block">
+            <h1 id="show">
+
+            </h1>
+        </div>
+        <div class="buttons-block">
+            <div class="important-charters">
+                <div class="numbers-block">
+                    <button onclick="saveNumber(1)"><h2>1</h2></button>
+                    <button onclick="saveNumber(2)"><h2>2</h2></button>
+                    <button onclick="saveNumber(3)"><h2>3</h2></button>
+                    <button onclick="saveNumber(4)"><h2>4</h2></button>
+                    <button onclick="saveNumber(5)"><h2>5</h2></button>
+                    <button onclick="saveNumber(6)"><h2>6</h2></button>
+                    <button onclick="saveNumber(7)"><h2>7</h2></button>
+                    <button onclick="saveNumber(8)"><h2>8</h2></button>
+                    <button onclick="saveNumber(9)"><h2>9</h2></button>
+                    <button class="zero" onclick="saveNumber(0)"><h2>0</h2></button>
+                </div>
+                <div class="operators-block">
+                    <button onclick="setOperator('+')"><h2>+</h2></button>
+                    <button onclick="setOperator('-')"><h2>-</h2></button>
+                    <button onclick="setOperator('*')"><h2>x</h2></button>
+                    <button onclick="setOperator('/')"><h2>÷</h2></button>
+                </div>
+            </div>
+            <div class="equal-button">
+                <button onclick="answer()"><h2>=</h2></button>
+                <button class= "clean-button" onclick="clean()"><h2>C</h2></button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="calculator.js"></script>
+</html>
